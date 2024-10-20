@@ -112,10 +112,10 @@ void CellularAutomata::update_lattice() {
     for (int j = 2; j < _lattice_size-2; j++) {
         for (int k = 2; k < _lattice_size-2; k++) {
             if (_lattice[j][k] == SAND) {
-                new_cells++;
+                old_cells++;
             }
             if (_next_lattice[j][k] == SAND) {
-                old_cells++;
+                new_cells++;
             }
         }
     }
